@@ -42,5 +42,18 @@ public class Operators {
          value = 5;
          System.out.println(++value); // this will print out 6
 
+        /*
+         * There are also logical operators you can see in action in the control flow java files, but here at
+         * curated list of logical operators is as well
+         * > greater than
+         * < less than
+         * >= greater than or equal to
+         * <= less than or equal to
+         * == equal
+         * ! not operator (flips the requirement)
+         * && logical and operator (let's you chain logical statements: both must be true)
+         * || logical or operator (let's you chain logical statements: only one needs to be true)
+         */
+
      }
 }
