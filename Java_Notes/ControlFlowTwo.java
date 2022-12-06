@@ -36,6 +36,7 @@ public class ControlFlowTwo{
          String password = "passw0rd";
 
          // Nested if statements can be a little rough to read: I recommend combing them into one if statement
+         // if you want to combine logical operations you can either use the logical and && or use the logical or ||
          if(username.equals("username")){
             if(password.equals("passw0rd")){
                 System.out.println("Logged in successfully");
@@ -53,7 +54,6 @@ public class ControlFlowTwo{
          } else{
             System.out.println("Login failed: please try again");
          }
-
 
         
     }
