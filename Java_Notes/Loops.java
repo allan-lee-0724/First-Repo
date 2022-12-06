@@ -29,13 +29,31 @@ public class Loops {
         // If I wanted to store int numbers and loop through them I could do so with an array
         int[] numbers = {1, 3, 5, 9, 15, 34, 73, 8, 7893274};
         // To access the contents of an array you use index positions: indexing starts at 0 and works its way up
-        for(int x = 0; x < numbers.length; ++x){
+        for(int x = 0; x < numbers.length; x++){
             if(numbers[x] % 2 == 0){
                 System.out.println("x is even this iteration");
             } else{
                 System.out.println("x is odd this iteration");
             }
-            System.out.println(x);
         }
+
+        // Another way you can loop your code is with a while loop
+        int x = 0;
+        while(x <= 10){
+            System.out.println(x);
+            x++;
+        }
+
+        /*
+         * For loops are particularly useful when you know how many times you need to do something, or you are working through a data collection
+         * A while loop is going to be more useful when you can't be sure how many times an operation needs to happen, or your exit condition
+         * for the loop does not lend itself well to basic mathematics
+         */
+
+         x = 110;
+         do{
+            System.out.println(x);
+            x++;
+         } while(x <= 10);
     }
 }
