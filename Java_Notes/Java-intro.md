@@ -32,4 +32,9 @@ Java is an object Oriented Programming language: this means that everything is t
 Classes in Java are like blueprints: they contain the information needed for your code to work.
 Objects in Java are the implementation of the blueprints.
 It is important to remember that objects do not share the value of their fields with one another: the values are unique to the object
-when these fields are part of the instance/object scope
+when these fields are part of the instance/object scope.
+
+
+## Interfaces
+If Classes are blueprints for objects, Interfaces are more like contract agreements for classes. If a class "implements" an interface 
+it is like an agreement has been made that the class will, somehow, implement the features of the interface. Interfaces are also unique in that a class can implement multiple interfaces, whereas only a single class can be extended
