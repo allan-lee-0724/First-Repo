@@ -62,6 +62,7 @@ public class Car {
         this.gas -= 10;
     }
 
+    // By adding the static keyword to the method we indicate the method belongs to the class proper, and so is called by the class, not individual objects
     public static void checkCount(){
         System.out.println("There are " + count + " cars created");
     }
