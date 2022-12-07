@@ -25,3 +25,11 @@ Contained within the JRE is the JAVA Virtual Machine (JVM), which is the tool th
 
 The JVM is the tool that takes the byte code (.class files) and turns it into data that is understandable by your particular operating system.
 Keep in mind, all JVMs are found in their respective Java Runtime Environment
+
+
+## Classes & Objects
+Java is an object Oriented Programming language: this means that everything is tied to classes and objects.
+Classes in Java are like blueprints: they contain the information needed for your code to work.
+Objects in Java are the implementation of the blueprints.
+It is important to remember that objects do not share the value of their fields with one another: the values are unique to the object
+when these fields are part of the instance/object scope
