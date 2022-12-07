@@ -38,3 +38,8 @@ when these fields are part of the instance/object scope.
 ## Interfaces
 If Classes are blueprints for objects, Interfaces are more like contract agreements for classes. If a class "implements" an interface 
 it is like an agreement has been made that the class will, somehow, implement the features of the interface. Interfaces are also unique in that a class can implement multiple interfaces, whereas only a single class can be extended
+
+
+## When to use Abstract vs. Interface
+If the only thing that needs to be shared is methods then use an interface
+If you also need to share fields (variables associated with the objects) then use an Abstract class
