@@ -54,6 +54,49 @@ public class App
             ctx.status(200);
         });
 
+        // This is an example of how you could inform the user that they requested a name out of bound
+        app.get("/protectedGet/{num}", ctx -> {
+            String numAsString = ctx.pathParam("num");
+            int num = Integer.parseInt(numAsString);
+            try{
+                String person = names.get(num);
+                ctx.result(person);
+                ctx.status(200);
+            } catch (IndexOutOfBoundsException e){
+                ctx.result("No person found at that index position");
+                ctx.status(404);
+            }
+        });
+
+        app.put("/replace/{num}", ctx -> {
+            // Get the index position from the path as a string
+            String numAsString = ctx.pathParam("num");
+            // Convert string index position to an int
+            int num = Integer.parseInt(numAsString);
+            // Get the string value we will be replacing the current data with
+            String replacePerson = ctx.body();
+            // Use the set method to replace the old name with the new name
+            names.set(num, replacePerson);
+            // Tell Javalin to give a success message and status code back to the user
+            ctx.result("Replaced person successfully!");
+            ctx.status(200);
+        });
+
+        app.patch("/update/{num}", ctx ->{
+            String numAsString = ctx.pathParam("num");
+            int num = Integer.parseInt(numAsString);
+            String updatedInformation = ctx.body();
+            names.set(num, updatedInformation);
+            ctx.result("Updated person successfully!");
+            ctx.status(200);
+        });
+
+        app.delete("/delete", ctx -> {
+            names.clear();
+            ctx.result("All names have been removed from the database");
+            ctx.status(200);
+        });
+
         app.start();
     }
 }
