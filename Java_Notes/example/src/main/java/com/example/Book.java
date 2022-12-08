@@ -21,7 +21,9 @@ public class Book {
     private String author;
     private String genre;
     private int isbn;
-    
+
+    // The public methods below are used to change the fields of any book objects created
+
     public String getTitle() {
         return title;
     }
