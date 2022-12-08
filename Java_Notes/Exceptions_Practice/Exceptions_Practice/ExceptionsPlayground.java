@@ -1,3 +1,4 @@
+package Exceptions_Practice;
 public class ExceptionsPlayground {
     public static void main(String[] args) {
         

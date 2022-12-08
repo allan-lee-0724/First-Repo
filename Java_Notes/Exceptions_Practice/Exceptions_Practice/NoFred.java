@@ -1,3 +1,4 @@
+package Exceptions_Practice;
 public class NoFred extends Exception{
     // This is out custom checked exception
     public NoFred(String message){
