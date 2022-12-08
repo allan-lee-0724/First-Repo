@@ -1,7 +1,5 @@
 package Interface;
 
-import TI89;
-
 public class CalculatorPlayground {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
