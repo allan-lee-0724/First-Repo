@@ -43,3 +43,5 @@ Javascript Object Notation (JSON) is one of the most popular ways of formatting 
 }
 ```
 jsons accept three data types: strings, numbers, and booleans. 
+
+DAO = Data Access Object
