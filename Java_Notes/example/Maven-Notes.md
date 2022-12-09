@@ -5,6 +5,6 @@ The page object model (pom) is where you tell Maven the relevant information abo
 - Dependencies
     - This is where we tell Maven the third party libraries we want to integrate into our project
 - Build
-    - This is where we can add plugins to out project that affect the way Maven builds our application
+    - This is where we can add plugins to our project that affect the way Maven builds our application
         - A common use-case is to use the maven-surefire-plugin so that Maven will only build the application
         if all tests associated with the project pass
