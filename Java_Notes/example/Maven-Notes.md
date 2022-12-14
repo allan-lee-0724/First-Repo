@@ -1,5 +1,5 @@
 # pom.xml
-The page object model (pom) is where you tell Maven the relevant information about your maven project. Points of interest:
+The project object model (pom) is where you tell Maven the relevant information about your maven project. Points of interest:
 - Properties
     - This is where we tell Maven what version of Jave we are using
 - Dependencies
